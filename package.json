@@ -1,0 +1,13 @@
+{
+  "name": "sailing-exam",
+  "version": "1.0.0",
+  "description": "Generator of sailing exam questionnaire",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "convert-data": "node to-json.js data/colreg.txt; node to-json.js data/navigatie.txt; node to-json.js data/manevra.txt; node to-json.js sample.data/marinarie.txt",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mihnea Simian <contact@mesimian.com>",
+  "license": "ISC"
+}

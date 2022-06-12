@@ -1,0 +1,28 @@
+Intrebare
+Raspuns 1
+Corect 1
+Raspuns 2
+Corect 2
+Raspuns 3
+Corect 3
+Scara numerică a unei hărţi este
+Raportul dintre lungimea şi lăţimea hărţii
+0
+Un număr de catalog
+0
+Raportul dintre lungimea unitară de pe Pământ şi corespondentul pe hartă
+1
+În emisfera vestică, daca nava se deplasează spre vest
+latitudinea punctului de sosire este mai mica decât latitudinea punctului de sosire
+0
+longitudinea punctului de plecare este mai mică decât longitudinea punctului de sosire
+1
+longitudinea punctului de plecare este mai mare decât longitudinea punctului de sosire
+0
+Temperatura apei de mare se exprimă în
+Milibari
+0
+grade Celsius
+1
+milimetri coloana de mercur
+0

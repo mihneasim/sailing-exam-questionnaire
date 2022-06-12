@@ -1,0 +1,21 @@
+Intrebare
+Raspuns 1
+Corect 1
+Raspuns 2
+Corect 2
+Raspuns 3
+Corect 3
+Piesa de rezistenta situata in extremitatea prova, constituind o prelungire a chilei, se numeşte
+contrachila
+0
+etrava
+1
+carlinga
+0
+Ce reprezintă un cui de strapazan?
+un cui de lemn folosit la asamblarea pieselor de rezistenta
+0
+un cui de lemn bătut in marginea bordajului, vertical de care se prinde rama
+1
+un cui de lemn , aşezat la prova de care se leagă barca
+0

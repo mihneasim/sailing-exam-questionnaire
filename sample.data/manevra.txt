@@ -1,0 +1,28 @@
+Intrebare
+Raspuns 1
+Corect 1
+Raspuns 2
+Corect 2
+Raspuns 3
+Corect 3
+La deplasarea înainte a bărcii, efectul cârmei determină
+orientarea provei în vânt
+0
+orientarea provei în bordul în care s-a pus cârma şi a pupei în bordul opus
+1
+mersul în linie dreaptă
+0
+La marş înainte, pupa este abătută
+spre dreapta
+0
+în bordul pasului elicei, iar prova are tendinţa să gireze în bordul opus pasului elicei
+1
+spre stânga
+0
+Acostarea ambarcaţiunii la mal neamenajat
+nu este recomandată
+0
+se face cu vigilenţă sporită, protejând elicea şi cârma
+1
+este interzisă
+0
