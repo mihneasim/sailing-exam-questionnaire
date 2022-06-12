@@ -4,6 +4,12 @@
   "modules": [
     {
       "kind": "javascript-module",
+      "path": "to-json.js",
+      "declarations": [],
+      "exports": []
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/QuestionnaireApp.js",
       "declarations": [
         {
@@ -17,7 +23,7 @@
               "type": {
                 "text": "string"
               },
-              "default": "'My app'",
+              "default": "'Simulator examen categoria C'",
               "privacy": "public",
               "attribute": "title"
             }
@@ -49,6 +55,47 @@
     },
     {
       "kind": "javascript-module",
+      "path": "src/QuizQuestion.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "QuizQuestion",
+          "members": [
+            {
+              "kind": "field",
+              "name": "data",
+              "privacy": "public",
+              "attribute": "data"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "data",
+              "fieldName": "data"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "quiz-question",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "QuizQuestion",
+          "declaration": {
+            "name": "QuizQuestion",
+            "module": "src/QuizQuestion.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
       "path": "src/questionnaire-app.js",
       "declarations": [],
       "exports": [
@@ -58,6 +105,14 @@
           "declaration": {
             "name": "QuestionnaireApp",
             "module": "/src/QuestionnaireApp.js"
+          }
+        },
+        {
+          "kind": "custom-element-definition",
+          "name": "quiz-question",
+          "declaration": {
+            "name": "QuizQuestion",
+            "module": "/src/QuizQuestion.js"
           }
         }
       ]
