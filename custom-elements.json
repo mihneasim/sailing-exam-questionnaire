@@ -1,0 +1,66 @@
+{
+  "schemaVersion": "1.0.0",
+  "readme": "",
+  "modules": [
+    {
+      "kind": "javascript-module",
+      "path": "src/QuestionnaireApp.js",
+      "declarations": [
+        {
+          "kind": "class",
+          "description": "",
+          "name": "QuestionnaireApp",
+          "members": [
+            {
+              "kind": "field",
+              "name": "title",
+              "type": {
+                "text": "string"
+              },
+              "default": "'My app'",
+              "privacy": "public",
+              "attribute": "title"
+            }
+          ],
+          "attributes": [
+            {
+              "name": "title",
+              "fieldName": "title"
+            }
+          ],
+          "superclass": {
+            "name": "LitElement",
+            "package": "lit"
+          },
+          "tagName": "questionnaire-app",
+          "customElement": true
+        }
+      ],
+      "exports": [
+        {
+          "kind": "js",
+          "name": "QuestionnaireApp",
+          "declaration": {
+            "name": "QuestionnaireApp",
+            "module": "src/QuestionnaireApp.js"
+          }
+        }
+      ]
+    },
+    {
+      "kind": "javascript-module",
+      "path": "src/questionnaire-app.js",
+      "declarations": [],
+      "exports": [
+        {
+          "kind": "custom-element-definition",
+          "name": "questionnaire-app",
+          "declaration": {
+            "name": "QuestionnaireApp",
+            "module": "/src/QuestionnaireApp.js"
+          }
+        }
+      ]
+    }
+  ]
+}
