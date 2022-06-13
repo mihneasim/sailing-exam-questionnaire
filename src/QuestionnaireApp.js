@@ -29,6 +29,7 @@ export class QuestionnaireApp extends LitElement {
 
       main {
         flex-grow: 1;
+        margin-bottom: 1em;
       }
 
       .app-footer {
@@ -57,13 +58,24 @@ export class QuestionnaireApp extends LitElement {
       });
   }
 
+  validate() {
+    // A quickie, should instead use a custom event to ask
+    // questions to validate themselves and report status to
+    // sum up a score
+    Array.from(this.shadowRoot.getElementById('main').getElementsByTagName('quiz-question')).forEach((x) =>
+      x.validate()
+    );
+  }
+
   render() {
     return html`
-      <main>
+      <main id="main">
         <h1>${this.title}</h1>
 
         ${this.questions.map((x, ind) => html`<quiz-question questionId="${ind}" .question="${x}"></quiz-question>`)}
       </main>
+
+      <button @click=${this.validate}>Validează tot</button>
 
       <p class="app-footer">
         ⛵ Made with love by Mihnea S. and

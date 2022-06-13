@@ -17,4 +17,5 @@ txt-s in data/. Then run
 
 ### Built With
 
-- [node](https://nextjs.org/), you may need at least version 18.
+- [node](https://nextjs.org/), you may need at least version 18
+- [lit](https://lit.dev/)
