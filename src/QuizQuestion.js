@@ -38,7 +38,6 @@ export class QuizQuestion extends LitElement {
   onChange(e) {
     // another dirty one, i was in a hurry
     this.selectedAnswer = e.target.id.substr(e.target.id.lastIndexOf('-') + 1);
-    console.log(`Selected answer`, this.selectedAnswer);
   }
 
   validate() {
