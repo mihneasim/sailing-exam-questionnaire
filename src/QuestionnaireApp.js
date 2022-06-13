@@ -6,7 +6,8 @@ export class QuestionnaireApp extends LitElement {
   static get properties() {
     return {
       title: { type: String },
-      questions: { type: Array }
+      questions: { type: Array },
+      score: { type: String }
     };
   }
 
@@ -47,6 +48,7 @@ export class QuestionnaireApp extends LitElement {
     super();
     this.title = 'Simulator examen categoria C';
     this.questions = [];
+    this.score = 'necalculat';
   }
 
   connectedCallback() {
@@ -62,9 +64,14 @@ export class QuestionnaireApp extends LitElement {
     // A quickie, should instead use a custom event to ask
     // questions to validate themselves and report status to
     // sum up a score
-    Array.from(this.shadowRoot.getElementById('main').getElementsByTagName('quiz-question')).forEach((x) =>
-      x.validate()
-    );
+    let correct = 0;
+    let total = 0;
+    Array.from(this.shadowRoot.getElementById('main').getElementsByTagName('quiz-question')).forEach((x) => {
+      x.validate();
+      if (x.correct) correct++;
+      total++;
+    });
+    this.score = `${correct} / ${total}`;
   }
 
   render() {
@@ -74,6 +81,8 @@ export class QuestionnaireApp extends LitElement {
 
         ${this.questions.map((x, ind) => html`<quiz-question questionId="${ind}" .question="${x}"></quiz-question>`)}
       </main>
+
+      <p>Scor: ${this.score}</p>
 
       <button @click=${this.validate}>Validează tot</button>
 
