@@ -14,6 +14,7 @@ txt-s in data/. Then run
 
     npm i # d'oh
     npm run convert-data
+    npm start
 
 ### Built With
 
